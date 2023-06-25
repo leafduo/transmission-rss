@@ -119,6 +119,7 @@ func main() {
 			log.Printf("Torrent added: %s", torrent.Title)
 		}
 
+		log.Printf("Sleep %d seconds...", config.UpdateInterval)
 		time.Sleep(time.Duration(config.UpdateInterval) * time.Second)
 	}
 }
